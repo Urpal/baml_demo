@@ -6,9 +6,8 @@ from baml_client.types import ChatMsg, WeatherAPI, USPresidentAPI, AssistantMsg
 import asyncio
 from collections import deque
 
-
 # Set max messages such that 
-MAX_MESSAGES = 5
+MAX_MESSAGES = 12
 
 async def chat_message_stream(messages: list[ChatMsg]):
     stream = b_async.stream.ChatWithTools(messages = messages)
@@ -37,6 +36,7 @@ def handle_tool(final_response):
   else:
       st.session_state.messages.append({"role": "assistant", "content": final_response})
       print(f"Other response: {final_response}")
+      return final_response
 
 # Initialize chat history in session state
 if "messages" not in st.session_state:
