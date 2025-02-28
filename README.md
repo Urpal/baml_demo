@@ -63,3 +63,6 @@ Either launch the debugger or type
 ```bash
 streamlit run app/chat_app.py
 ```
+
+Be adviced to either change the model to use a local hosted model using Ollama or add a .env file with appropriate keys to your model. 
+For just playing around, using the free tier Google gemini API for the Flash2.0 is recommended! 
