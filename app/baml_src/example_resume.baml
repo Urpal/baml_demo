@@ -20,20 +20,20 @@ function ExtractResume(resume: string) -> Resume {
 }
 
 // Test the function with a sample resume. Open the VSCode playground to run this.
-test vaibhav_resume {
+test phs_resume {
   functions [ExtractResume]
   args {
     resume #"
-      Vaibhav Gupta
-      vbv@boundaryml.com
+      Pål HS
+      phs@hotmail.com
 
       Experience:
-      - Founder at BoundaryML
-      - CV Engineer at Google
-      - CV Engineer at Microsoft
+      - Founder at Nothing
+      - CV Engineer at DontKnowIt
+      - Systems Engineer at Ferrari
 
       Skills:
-      - Rust
+      - Python snakes
       - C++
     "#
   }
